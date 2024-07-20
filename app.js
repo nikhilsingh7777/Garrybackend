@@ -11,9 +11,7 @@ app.use(cors({ origin: "http://localhost:3000", credentials: true }));
 
 const PORT = process.env.PORT || 5000;
 
-mongoose.connect(process.env.MONGO_URI, {
-    useUnifiedTopology: true
-}).then(() => {
+mongoose.connect(process.env.MONGO_URI).then(() => {
     console.log("MongoDB connection established");
 }).catch((err) => console.log("MongoDB connection failed: ", err.message));
 
