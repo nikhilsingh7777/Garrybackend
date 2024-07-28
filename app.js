@@ -7,7 +7,7 @@ require("dotenv").config();
 const app = express();
 
 app.use(express.json());
-app.use(cors({ origin: "https://garryllcmootrs-i8ccsqsbn-nikhil-singhs-projects-9d3df4d7.vercel.app", credentials: true }));
+app.use(cors({ origin: "https://garrymotors-com-frontend.vercel.app/", credentials: true }));
 
 const PORT = process.env.PORT || 5000;
 
